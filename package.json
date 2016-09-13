@@ -1,0 +1,22 @@
+{
+  "name": "schema-mock",
+  "version": "0.0.1",
+  "description": "mock server of prmd schema",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "schema-mock": "./bin/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ajv": "^4.1.5",
+    "json-schema-faker": "^0.3.6",
+    "koa": "^1.2.4",
+    "koa-body": "^1.5.0",
+    "koa-router": "^5.4.0",
+    "lodash": "^4.15.0"
+  }
+}
