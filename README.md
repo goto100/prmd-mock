@@ -3,7 +3,7 @@ mock server for prmd
 
 ## differents from `prmd stub`?
 
-prmd-mock using [json-schema-faker]() to generate random mock data, `prmd stub` just using the `example` in schema file.
+prmd-mock using [json-schema-faker](https://github.com/json-schema-faker/json-schema-faker) to generate random mock data, `prmd stub` just using the `example` in schema file.
 
 ## How to use it?
 
