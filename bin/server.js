@@ -7,6 +7,10 @@ const Ajv = require('ajv');
 const validate = require('../lib/validate');
 const mock = require('../lib/mock');
 const hrefToPath = require('../lib/utils').hrefToPath;
+const { port } = require('yargs').alias({
+  p: 'port',
+  h: 'help',
+}).default('p', 8001).describe('p', 'Listen port').help().argv;
 
 const app = koa();
 app.use(require('koa-body')());
@@ -35,6 +39,6 @@ files.forEach(file => {
 
 app.use(router.routes());
 
-const server = app.listen(8001, () => {
+const server = app.listen(port, () => {
 	console.log(`Server listening on port ${server.address().port}`);
 });
