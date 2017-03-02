@@ -13,7 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "ajv": "^4.1.5",
-    "json-schema-faker": "^0.3.6",
+    "json-schema-faker": "^0.4.0",
     "koa": "^1.2.4",
     "koa-body": "^1.5.0",
     "koa-router": "^5.4.0",
